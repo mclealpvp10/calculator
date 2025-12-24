@@ -6,6 +6,7 @@
 int main(){
   float num1;
   float num2;
+  float resultado;
   char operacao;
 
   printf("Digite o 1º número: ");
@@ -16,10 +17,12 @@ int main(){
   printf("Digite a operação: (+, -)\n");
   scanf(" %c", &operacao);
   if (operacao ==  '+') {
-    printf("Mais\n");
+    float resultado = num1 + num2;
+    printf("O resultado da conta %.2f + %.2f é %.2f\n", num1, num2, resultado);
   } 
   else if (operacao == '-') {
-    printf("Menos\n");
+    float resultado = num1 - num2; 
+    printf("O resultado da conta %.2f - %.2f é %.2f\n", num1, num2, resultado);
   } else {
     printf("Inválido!\n");
   }
